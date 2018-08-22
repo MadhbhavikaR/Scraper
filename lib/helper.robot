@@ -37,7 +37,7 @@ Get Districts
 Get ACs
     [Arguments]                     @{acs}
     : FOR   ${ac}                   IN                      @{acs}
-    \   log to console              Scrapping Accountancy : ${ac}
+    \   log to console              Scrapping constituency : ${ac}
     \   select                      id=ddlAC                ${ac}
     \   click                       id=imgbtnFind
     \   ${session}                  Get Cookie value        ASP.NET_SessionId
